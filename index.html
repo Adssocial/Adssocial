@@ -82,24 +82,24 @@
       border-top: 1px solid #222;
     }
     <style>
+    .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.btn {
+  min-width: 160px;
+  text-align: center;
+}
+@media (max-width: 600px) {
   .btn-group {
-    display: inline-block;center;
-    gap: 15px;
-    margin-top: 25px;
-    justify-content: center;
+    flex-direction: column;
   }
-
-  .btn {
-    padding: 12px 26px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
-    border: 1px solid transparent;
-  }
-
+}
   .btn-creator {
     background: transparent;
     border: 1px solid #00C853;
