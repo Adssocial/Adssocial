@@ -81,7 +81,41 @@
       color: #666;
       border-top: 1px solid #222;
     }
-    
+    <style>
+  .btn-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+  }
+
+  .btn-creator {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+  }
+
+  .btn-viewer {
+    background: transparent;
+    border: 1px solid #00c6ff;
+    color: #00c6ff;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+</style>
     <div style="text-align:center; margin-top:25px;">
   <a href="viewer.html" style="
     display:inline-block;
@@ -122,8 +156,11 @@
     Monetize digital attention through a transparent and fair social economy.
     Ad$$ocial transforms engagement into real value for platforms, creators, and viewers.
   </p>
-  <a href="viewer.html">Join as Viewer</a>
-  <a href="creator.html">Join as Creator</a>
+  <div class="btn-group notranslate" translate="no">
+  <a href="creator.html" class="btn btn-creator">Join as Creator</a>
+  <a href="viewer.html" class="btn btn-viewer">Join as Viewer</a>
+  </div>
+
   <a href="#" class="btn">Launch Platform</a>
   <a href="#" class="btn">Whitepaper</a>
 </div>
