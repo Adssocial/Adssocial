@@ -81,35 +81,44 @@
       color: #666;
       border-top: 1px solid #222;
     }
+.action-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin-top: 40px;
+}
 
-    .btn-group {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      color: #000;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn {
-      min-width: 160px;
-      text-align: center;
-    }
-    .btn-creator {
-      background: transparent;
-      border: 1px solid #00C853;
-      color: #00C853;
-    }
+.action-btn {
+  width: 200px;
+  padding: 14px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
 
-    .btn-viewer {
-      background: transparent;
-      border: 1px solid #00c6ff;
-      color: #00c6ff;
-    }
+.creator {
+  border: 2px solid #00ff6a;
+  color: #00ff6a;
+}
 
-    .btn:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
+.viewer {
+  border: 2px solid #00b7ff;
+  color: #00b7ff;
+}
+
+.creator:hover {
+  background: #00ff6a;
+  color: #000;
+}
+
+.viewer:hover {
+  background: #00b7ff;
+  color: #000;
     }
  </style>
 </head>
@@ -118,9 +127,9 @@
 <header>
   <div class="logo notranslate" translate="no">Ad<span>$$</span>ocial</div>
 </header>
-<div class="btn-group notranslate" translate="no">
-  <a href="creator.html" class="btn btn-creator">Join as Creator</a>
-  <a href="viewer.html" class="btn btn-viewer">Join as Viewer</a>
+  <div class="action-wrapper notranslate" translate="no">
+  <a href="creator.html" class="action-btn creator">Join as Creator</a>
+  <a href="viewer.html" class="action-btn viewer">Join as Viewer</a>
   </div>
 <div class="hero container">
   <h1>Where Attention Becomes Assets</h1>
